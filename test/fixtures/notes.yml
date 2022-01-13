@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  error: MyString
+  goal: MyString
+  total: 1
+  successful: 1
+  unsuccessful: 1
+  prompting: MyString
+  content: MyText
+  therapist: one
+
+two:
+  error: MyString
+  goal: MyString
+  total: 1
+  successful: 1
+  unsuccessful: 1
+  prompting: MyString
+  content: MyText
+  therapist: two

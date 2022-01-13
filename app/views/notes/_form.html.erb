@@ -1,0 +1,57 @@
+<%= form_with(model: note) do |form| %>
+  <% if note.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(note.errors.count, "error") %> prohibited this note from being saved:</h2>
+
+      <ul>
+        <% note.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :error %>
+    <%= form.text_field :error %>
+  </div>
+
+  <div class="field">
+    <%= form.label :goal %>
+    <%= form.text_field :goal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :total %>
+    <%= form.number_field :total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :successful %>
+    <%= form.number_field :successful %>
+  </div>
+
+  <div class="field">
+    <%= form.label :unsuccessful %>
+    <%= form.number_field :unsuccessful %>
+  </div>
+
+  <div class="field">
+    <%= form.label :prompting %>
+    <%= form.text_field :prompting %>
+  </div>
+
+  <div class="field">
+    <%= form.label :content %>
+    <%= form.text_area :content %>
+  </div>
+
+  <div class="field">
+    <%= form.label :therapist_id %>
+    <%= form.text_field :therapist_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

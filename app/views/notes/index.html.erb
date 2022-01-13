@@ -1,0 +1,6 @@
+<p id="notice"><%= notice %></p>
+
+<%= link_to 'New Note', new_note_path %>
+<note-index
+  :notes="<%= @notes.to_json %>"
+></note-index>
